@@ -8,10 +8,10 @@ display(angle);
 brick.ResetMotorAngle('A'); 
 brick.ResetMotorAngle('B'); 
 
-brick.MoveMotorAngleAbs('A', 20, 90, 'Brake');
-brick.MoveMotorAngleAbs('A', 20, 90, 'Brake');
+brick.MoveMotorAngleAbs('A', 100, 90, 'Brake');
+brick.MoveMotorAngleAbs('B', 100, 90, 'Brake');
 
-brick.WaitForMotor('A'); % Wait for motor to complete motion
+% brick.WaitForMotor('A'); % Wait for motor to complete motion
 
 position = brick.GetMotorAngle('A'); % Get Current Position
 
